@@ -16,6 +16,8 @@ RUN apt-get update && \
       python \
       git \
       cmake \
+      libdbus-1-dev \
+      zlib1g-dev \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/install.sh | bash && \
